@@ -15,24 +15,24 @@
 
     <main>
         <form id="survey-form">
-            <div>
-                <label id="name-label" for="name">Name</label>
+            <div class="form">
+                <label class="sub-title" id="name-label" for="name">Name</label>
                 <input id="name" type="text" placeholder="Enter your Name" required>
             </div>
     
-            <div>
-                <label id="email-label" for="email">Email</label>
+            <div class="form">
+                <label class="sub-title" id="email-label" for="email">Email</label>
                 <input id="email" type="email" placeholder="Enter your Email" required>
             </div>
     
-            <div>
+            <div class="form">
                 <!--Between age 10 to 99-->
-                <label id="number-label" for="age">Age (optional)</label>
+                <label class="sub-title" id="number-label" for="number">Age (optional)</label>
                 <input id="number" type="number" placeholder="Age" min="10" max="99">
             </div>
     
-            <div>
-                <label for="dropdown">Which option best describes your current role?</label>
+            <div class="form">
+                <label class="sub-title" for="dropdown">Which option best describes your current role?</label>
     
                 <select id="dropdown">
                     <option value="">Select current role</option>
@@ -45,7 +45,7 @@
             </div>
     
             <fieldset>
-                <legend>Would you recommend freeCodeCamp to a friend?</legend>
+                <legend class="sub-title">Would you recommend freeCodeCamp to a friend?</legend>
     
                 <div>
                     <input id="definitely" type="radio" name="options" value="definitely" checked>
@@ -61,8 +61,8 @@
                 </div>
             </fieldset>
     
-            <div>
-                <label for="feature">What is your favorite feature of freeCodeCamp?</label>
+            <div class="form">
+                <label class="sub-title" for="feature">What is your favorite feature of freeCodeCamp?</label>
     
                 <select id="feature">
                     <option value="">Select an option</option>
@@ -73,57 +73,56 @@
                 </select>
             </div>
     
-            <!--TODO: ADD VALUE-->
             <fieldset>
-                <legend>What would you like to see improved? (Check all that apply)</legend>
+                <legend class="sub-title">What would you like to see improved? (Check all that apply)</legend>
                 <div>
-                    <input type="checkbox" id="project1" name="project" value="front_end">
-                    <label for="project1">Front-end Project</label>
+                    <input type="checkbox" id="front-end" name="project" value="front-end">
+                    <label for="front-end">Front-end Project</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="project2" name="project" value="back_end">
-                    <label for="project2">Back-end Project</label>
+                    <input type="checkbox" id="back-end" name="project" value="back-end">
+                    <label for="back-end">Back-end Project</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="data" name="project" value="visualization">
-                    <label for="data">Data Visualization</label>
+                    <input type="checkbox" id="visualization" name="project" value="visualization">
+                    <label for="visualization">Data Visualization</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="task" name="project" value="challenges">
-                    <label for="task">Challenges</label>
+                    <input type="checkbox" id="challenges" name="project" value="challenges">
+                    <label for="challenges">Challenges</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="community" name="project" value="open_source">
-                    <label for="community">Open Source Community</label>
+                    <input type="checkbox" id="open-source" name="project" value="open-source">
+                    <label for="open-source">Open Source Community</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="rooms" name="project" value="gitter_help">
+                    <input type="checkbox" id="rooms" name="project" value="rooms">
                     <label for="rooms">Gitter help rooms</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="activity" name="project" value="videos">
-                    <label for="activity">Videos</label>
+                    <input type="checkbox" id="videos" name="project" value="videos">
+                    <label for="videos">Videos</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="city" name="project" value="meetups">
-                    <label for="city">City Meetups</label>
+                    <input type="checkbox" id="meetups" name="project" value="meetups">
+                    <label for="meetups">City Meetups</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="doc" name="project" value="wiki">
-                    <label for="doc">Wiki</label>
+                    <input type="checkbox" id="wiki" name="project" value="wiki">
+                    <label for="wiki">Wiki</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="forum" name="project" value="isOn">
+                    <input type="checkbox" id="forum" name="project" value="forum">
                     <label for="forum">Forum</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="additional_courses" name="additional_courses" value="itsOn">
-                    <label for="additional_courses">Additional Courses</label>
+                    <input type="checkbox" id="add-courses" name="project" value="add-courses">
+                    <label for="add-courses">Additional Courses</label>
                 </div>
             </fieldset>
     
-            <div>
-                <label for="comment">Any comments or suggestions?</label>
+            <div class="form">
+                <label class="sub-title" for="comment">Any comments or suggestions?</label>
                 <textarea id="comment" name="comment" >Enter your comment here...</textarea>
             </div>
     
